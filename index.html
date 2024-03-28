@@ -1,172 +1,258 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth scroll-p-10">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>QScriptCoffee</title>
 </head>
+
 <body>
-  <!-- Header -->
-  <nav class="bg-[#fafbfb] shadow-shd px-2 py-3 flex flex-col sm:flex-row sm:items-center justify-between sticky top-0 z-10">
-    <a href="#" class="sm:text-4xl text-xl font-bold sm:mx-5 cursor-pointer font-tf">QScript<span class="text-[#a56c52] font-serif">Coffee</span></a>
-    <ul class="flex flex-col sm:flex-row sm:space-x-2 lg:text-xl text-base items-center font-serif font-bold cursor-pointer md:px-20 transition-all delay-800 ease-linear">
-      <div class="hidden md:flex flex-row space-x-3">
-          <a href="#"><li class="lg:px-4  hover:text-[#a56c52]">Home</li></a> 
-          <a href="#about"> <li class="lg:px-4 hover:text-[#a56c52]">About Us</li></a>
-          <a href="#menu"><li class="lg:px-4 hover:text-[#a56c52]">Menu</li></a>
-          <a href="#contact"><li class="lg:px-4  hover:text-[#a56c52]">Contact</li></a>
+    <!-- Header -->
+    <nav
+        class="bg-[#fafbfb] shadow-shd px-2 py-3 flex flex-col sm:flex-row sm:items-center justify-between sticky top-0 z-10">
+        <a href="#" class="sm:text-4xl text-xl font-bold sm:mx-5 cursor-pointer font-tf">QScript<span
+                class="text-[#a56c52] font-serif">Coffee</span></a>
+        <ul
+            class="flex flex-col sm:flex-row sm:space-x-2 lg:text-xl text-base items-center font-serif font-bold cursor-pointer md:px-20 transition-all delay-800 ease-linear">
+            <div class="hidden md:flex flex-row space-x-3">
+                <a href="#">
+                    <li class="lg:px-4  hover:text-[#a56c52]">Home</li>
+                </a>
+                <a href="#about">
+                    <li class="lg:px-4 hover:text-[#a56c52]">About Us</li>
+                </a>
+                <a href="#menu">
+                    <li class="lg:px-4 hover:text-[#a56c52]">Menu</li>
+                </a>
+                <a href="#contact">
+                    <li class="lg:px-4  hover:text-[#a56c52]">Contact</li>
+                </a>
 
-      </div>    
-      <div class="md:hidden hidden absolute top-16 md:w-1/4 h-screen backdrop-blur-sm right-0 py-6 md:px-3" id="mobile-menu">
-          <a href="#"><li class="md:px-4 px-2 text-2xl font-tf py-3 hover:text-[#a56c52]">Home</li></a> 
-          <a href="#about"> <li class="md:px-4 text-2xl font-tf py-3 px-2 hover:text-[#a56c52]">About</li></a>
-          <a href="#menu"><li class="md:px-4 text-2xl font-tf py-3 px-2 hover:text-[#a56c52]">Services</li></a>
-          <a href="#contact"><li class="md:px-4 text-2xl font-tf py-3 px-2 hover:text-[#a56c52]">Contact</li></a>
-
-      </div>
-  </ul>
-  <button type="button" id="btn" class="absolute right-4 ring-2 md:hidden rounded-full hover:bg-[#a56c52] hover:text-white font-bold ring-[#a56c52]  w-8 h-8 mx-1"><i class="fa-solid fa-bars font-bold"></i></button>
-
-
-</nav>
-
-<!-- HEADER SECTION END -->
-
-<!-- HOME SECTION START -->
-<section class="hero flex items-center justify-center md:py-20 py-0">
-    <div class="hero-content text-center text-[black] flex flex-col flex-wrap items-center justify-between lg:flex-row">
-        <div class="left-side lg:w-2/4 w-full py-20 font-tf ">
-            <h1 class="text-4xl px-2 md:text-6xl lg:text-7xl xl:text-8xl font-bold">Welcome to QScript<span class="font-serif text-[#a56c52]">Coffee</span></h1>
-            <p class="text-lg md:text-xl px-2 lg:text-2xl mt-4 md:mt-6">Indulge in our specialty coffees and delectable pastries in a cozy ambiance.</p>
-            <a href="#contact" class="cta-button mt-6 md:mt-8 px-6 py-3 bg-[#bb7234] text-white font-semibold rounded-lg text-xl inline-block hover:bg-[#eac48c] hover:text-black hover:shadow-shd font-serif transition duration-300">Contact Us</a>
-        </div>
-        <div class="right-side lg:w-2/4 w-full flex items-center justify-center">
-            <img src="/img/home-img.png" alt="coffee image" class="lg:h-[450px] lg:w-[500px] h-[250px] w-[300px]">
-        </div>
-        
-    </div>
-</section>
-
-<!-- HOME SECTION END -->
-
-<!-- ABOUT US SECTION -->
-
-<section class="md:px-10 py-10" id="about">
-    <div class="md:px-10 px-3">
-        <h1 class="heading text-5xl md:text-7xl text-center font-tf font-bold text-[#a56c52]">ABOUT US</h1>
-        <div class="story flex flex-col lg:flex-row items-center justify-between">
-            <div class="left-side lg:w-2/4 w-full font-serif mt-5">
-                <div class="heading">
-                    <h1 class="font-bold text-4xl md:text-6xl lg:text-start text-center">Story</h1>
-                </div>
-                <div class="content font-serif mt-5">
-                    <p class="text-xl text-justify">At QScript Coffee, our story begins with a passion for exceptional coffee. Founded on the belief that every cup should be an experience, we meticulously source the finest beans and craft each brew with precision and care. Our journey is one of dedication to quality, innovation, and the artistry of coffee-making, creating a space where every sip tells a story of flavor, aroma, and craftsmanship.</p>
-                </div>
             </div>
-            <div class="right-side lg:w-2/4 w-full flex items-end justify-center">
-                <img src="img/about-img1.jpg" alt="story image" class="md:h-[550px] md:w-[550px] w-[350px] h-[350px]">
+            <div class="md:hidden hidden absolute top-16 md:w-1/4 h-screen backdrop-blur-sm right-0 py-6 md:px-3"
+                id="mobile-menu">
+                <a href="#">
+                    <li class="md:px-4 px-2 text-2xl font-tf py-3 hover:text-[#a56c52]">Home</li>
+                </a>
+                <a href="#about">
+                    <li class="md:px-4 text-2xl font-tf py-3 px-2 hover:text-[#a56c52]">About</li>
+                </a>
+                <a href="#menu">
+                    <li class="md:px-4 text-2xl font-tf py-3 px-2 hover:text-[#a56c52]">Services</li>
+                </a>
+                <a href="#contact">
+                    <li class="md:px-4 text-2xl font-tf py-3 px-2 hover:text-[#a56c52]">Contact</li>
+                </a>
+
             </div>
-
-        </div>
-        <div class="mission flex  flex-col-reverse lg:flex-row items-center justify-between">
-            <div class="left-side lg:w-2/4 w-full flex items-end justify-center">
-                <img src="img/about-img2.png" alt="mission image" class="md:h-[400px] md:w-[400px]h-[250px] w-[250px]">
-            </div>
-            <div class="right-side lg:w-2/4 w-full font-serif">
-                <div class="heading">
-                    <h1 class="font-bold text-4xl md:text-6xl lg:text-end text-center">Mission</h1>
-                </div>
-                <div class="content font-serif mt-5">
-                    <p class="text-xl text-justify">Our mission at QScript Coffee is to redefine the coffee experience. We strive to set new standards of quality and sustainability in the industry, ensuring that every cup reflects our commitment to excellence. Through community engagement, education, and a relentless pursuit of perfection, we aim to inspire a love for coffee that goes beyond taste, fostering a culture of appreciation, connection, and discovery.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ABOUT US SECTION END -->
-
-<!-- MENU SECTION -->
-
-<section class="md:px-10 py-10 bg-bgimg bg-no-repeat bg-fixed bg-cover " id="menu">
-    <h1 class="heading text-6xl md:text-7xl text-center font-tf font-bold text-[#a56c52]">MENU</h1>
-    <div class="coffee px-10 mt-10 backdrop-blur-sm p-3">
-        <h1 class="text-xl md:text-3xl font-serif font-bold mb-3">COFFEE</h1>
-       <ul class="space-y-3 list-disc">
-        <li class="text-xl font-tf text-red-950 font-semibold">
-            <span class="font-serif font-bold text-black">Espresso: </span> A single shot of intense and flavorsome coffee made by forcing hot water through finely ground coffee beans.
-        </li>
-       <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Doppio:</span> A double shot of espresso, resulting in 60 ml of coffee, without added hot water or milk, providing a strong and rich flavor.</li>
-       <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Ristretto:</span> A concentrated shot of espresso made with half the amount of water, offering a delicious and intense coffee experience.</li>
-       <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Long Black:</span> A double-shot of espresso poured over hot water, retaining the crema and delivering a strong, flavorful coffee without dilution.</li>
-       <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Short Macchiato:</span> An espresso shot topped with creamy steamed milk, providing a balanced and slightly creamy coffee experience.</li>
-       <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Long Macchiato:</span> Similar to a short macchiato but with a double shot of coffee, offering a more robust flavor profile.</li>
-       <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Mezzo Mezzo (Piccolo): </span> A single espresso shot in a small latte glass filled with steamed milk, creating a harmonious blend of coffee and milk.</li>
-       <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Cappuccino:</span> A classic coffee drink consisting of one part espresso, one part textured milk, and one part froth, often topped with chocolate for a finishing touch.</li>
-       </ul>
-    </div>
-    <div class="pasteries px-10 mt-10 backdrop-blur-sm p-3">
-        <h1 class="text-xl md:text-3xl font-serif font-bold mb-3">PASTERIES</h1>
-        <ul class="space-y-3 list-disc">
-         <li class="text-xl font-tf text-red-950 font-semibold">
-             <span class="font-serif font-bold text-black">
-                Croissant: </span> A classic French pastry known for its flaky layers and buttery taste, perfect for breakfast or a light snack.
-         </li>
-        <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Danish Pastry:</span> A sweet and flaky pastry with various fillings like fruit, cream cheese, or almond paste, ideal for a delicious treat with coffee or tea.</li>
-        <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Éclair:</span> A French pastry filled with cream and topped with icing, offering a delightful combination of textures and flavors.</li>
-        <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Cinnamon Roll:</span> A soft, sweet pastry with cinnamon sugar filling and cream cheese icing, a comforting and indulgent choice for a morning treat.</li>
-        <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Fruit Tart:</span> A buttery crust filled with pastry cream and topped with fresh fruits, creating a colorful and refreshing dessert option.</li>
-        <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Palmier:</span> Also known as elephant ears, these crispy, caramelized pastries are made from puff pastry and sugar, perfect for a sweet and crunchy snack.</li>
-        <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Macaron: </span> Delicate French cookies made from almond flour and filled with ganache, buttercream, or jam, offering a burst of flavor in every bite.</li>
-        <li class="text-xl font-tf text-red-950 font-semibold"> <span class="font-serif font-bold text-black">Baklava:</span> A sweet pastry made of layers of phyllo dough, nuts, and honey or syrup, providing a rich and decadent dessert experience.</li>
         </ul>
-    </div>
-</section>
+        <button type="button" id="btn"
+            class="absolute right-4 ring-2 md:hidden rounded-full hover:bg-[#a56c52] hover:text-white font-bold ring-[#a56c52]  w-8 h-8 mx-1"><i
+                class="fa-solid fa-bars font-bold"></i></button>
 
-<!-- MENU SECTION END -->
 
-<!-- CONTACT SECTION -->
-<section class="lg:px-10 py-10" id="contact">
-    <h1 class="heading text-5xl md:text-7xl text-center font-tf font-bold text-[#a56c52]">CONTACT</h1>
-  <div class="md:px-10 px-3 py-20 flex flex-col lg:flex-row items-center justify-between">
-    <div class="left lg:w-2/4 w-full lg:border-r-2 flex flex-col items-center justify-center mb-5 lg:mb-0">
-        <h2 class="text-2xl md:text-4xl font-bold font-serif">Get In Touch</h2>
-        <p class="text-xl font-semibold py-3 font-tf">Phone no. <span>+1 915003020</span></p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.0622138956!2d-74.3093241796713!3d40.69701929637387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1711549042331!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="shadow-shd rounded-md w-full lg:w-[400px]"></iframe>
-    </div>
-    <div class="right lg:w-2/4 w-full px-3 ">
-        <form class="md:w-3/4 mx-auto space-y-4  bg-gradient-to-l bg-[#e8c0a4] via-[#ffdba4] from-[#ffffff] py-10 px-5 rounded-md">
-        <div class="w-full space-x-3 flex flex-col justify-center gap-3 ">
-            <label for="name" class="text-xl font-serif font-bold ml-3">Name</label>
-            <input type="text" id="name" placeholder="Enter your name" class="shadow-shd rounded-md h-16 outline-none px-2 py-2 font-tf text-xl">
+    </nav>
+
+    <!-- HEADER SECTION END -->
+
+    <!-- HOME SECTION START -->
+    <section class="hero flex items-center justify-center md:py-20 py-0">
+        <div
+            class="hero-content text-center text-[black] flex flex-col flex-wrap items-center justify-between lg:flex-row">
+            <div class="left-side lg:w-2/4 w-full py-20 font-tf ">
+                <h1 class="text-4xl px-2 md:text-6xl lg:text-7xl xl:text-8xl font-bold">Welcome to QScript<span
+                        class="font-serif text-[#a56c52]">Coffee</span></h1>
+                <p class="text-lg md:text-xl px-2 lg:text-2xl mt-4 md:mt-6">Indulge in our specialty coffees and
+                    delectable pastries in a cozy ambiance.</p>
+                <a href="#contact"
+                    class="cta-button mt-6 md:mt-8 px-6 py-3 bg-[#bb7234] text-white font-semibold rounded-lg text-xl inline-block hover:bg-[#eac48c] hover:text-black hover:shadow-shd font-serif transition duration-300">Contact
+                    Us</a>
+            </div>
+            <div class="right-side lg:w-2/4 w-full flex items-center justify-center">
+                <img src="/img/home-img.png" alt="coffee image" class="lg:h-[450px] lg:w-[500px] h-[250px] w-[300px]">
+            </div>
+
         </div>
-        <div class="w-full space-x-3 flex flex-col justify-center gap-3">
-            <label for="email" class="text-xl font-serif font-bold ml-3">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" class="shadow-shd rounded-md h-16 outline-none px-2 py-2 font-tf text-xl">
-        </div>
-        <div class="w-full space-x-3 flex flex-col justify-center gap-3">
-            <label for="message" class="text-xl font-serif font-bold ml-3">Message</label>
-            <textarea  id="message" placeholder="Enter your message" class="shadow-shd rounded-md h-[150px] outline-none px-2 py-2 font-tf text-xl"></textarea>
-        </div>
-        <div class="text-center">
-            <button type="button"  class="cta-button mt-6 md:mt-8 px-6 py-3 bg-[#bb7234] text-white font-semibold rounded-lg inline-block w-2/4 hover:bg-[#eac48c] hover:text-black hover:shadow-shd font-serif transition duration-300">Send</button>
-        </div>
-    </form>
-    </div>
-  </div>
-</section>
-<!-- CONTACT SECTION END -->
+    </section>
 
-<!-- footer start -->
-<footer class="py-5 px-2 shadow-shd">
-  <h3 class="text-center md:text-lg text-sm font-bold font-tf">&copy; 2024, QScriptCoffee. All rights reserved.</h3>
-</footer>
-<!-- footer end -->
+    <!-- HOME SECTION END -->
+
+    <!-- ABOUT US SECTION -->
+
+    <section class="md:px-10 py-10" id="about">
+        <div class="md:px-10 px-3">
+            <h1 class="heading text-5xl md:text-7xl text-center font-tf font-bold text-[#a56c52]">ABOUT US</h1>
+            <div class="story flex flex-col lg:flex-row items-center justify-between">
+                <div class="left-side lg:w-2/4 w-full font-serif mt-5">
+                    <div class="heading">
+                        <h1 class="font-bold text-4xl md:text-6xl lg:text-start text-center">Story</h1>
+                    </div>
+                    <div class="content font-serif mt-5">
+                        <p class="text-xl text-justify">At QScript Coffee, our story begins with a passion for
+                            exceptional coffee. Founded on the belief that every cup should be an experience, we
+                            meticulously source the finest beans and craft each brew with precision and care. Our
+                            journey is one of dedication to quality, innovation, and the artistry of coffee-making,
+                            creating a space where every sip tells a story of flavor, aroma, and craftsmanship.</p>
+                    </div>
+                </div>
+                <div class="right-side lg:w-2/4 w-full flex items-end justify-center">
+                    <img src="img/about-img1.jpg" alt="story image"
+                        class="md:h-[550px] md:w-[550px] w-[350px] h-[350px]">
+                </div>
+
+            </div>
+            <div class="mission flex  flex-col-reverse lg:flex-row items-center justify-between">
+                <div class="left-side lg:w-2/4 w-full flex items-end justify-center">
+                    <img src="img/about-img2.png" alt="mission image"
+                        class="md:h-[400px] md:w-[400px]h-[250px] w-[250px]">
+                </div>
+                <div class="right-side lg:w-2/4 w-full font-serif">
+                    <div class="heading">
+                        <h1 class="font-bold text-4xl md:text-6xl lg:text-end text-center">Mission</h1>
+                    </div>
+                    <div class="content font-serif mt-5">
+                        <p class="text-xl text-justify">Our mission at QScript Coffee is to redefine the coffee
+                            experience. We strive to set new standards of quality and sustainability in the industry,
+                            ensuring that every cup reflects our commitment to excellence. Through community engagement,
+                            education, and a relentless pursuit of perfection, we aim to inspire a love for coffee that
+                            goes beyond taste, fostering a culture of appreciation, connection, and discovery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION END -->
+
+    <!-- MENU SECTION -->
+
+    <section class="md:px-10 py-10 bg-bgimg bg-no-repeat bg-fixed bg-cover " id="menu">
+        <h1 class="heading text-6xl md:text-7xl text-center font-tf font-bold text-[#a56c52]">MENU</h1>
+        <div class="coffee px-10 mt-10 backdrop-blur-sm p-3">
+            <h1 class="text-xl md:text-3xl font-serif font-bold mb-3">COFFEE</h1>
+            <ul class="space-y-3 list-disc">
+                <li class="text-xl font-tf text-red-950 font-semibold">
+                    <span class="font-serif font-bold text-black">Espresso: </span> A single shot of intense and
+                    flavorsome coffee made by forcing hot water through finely ground coffee beans.
+                </li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Doppio:</span> A double shot of espresso, resulting in
+                    60 ml of coffee, without added hot water or milk, providing a strong and rich flavor.</li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Ristretto:</span> A concentrated shot of espresso made
+                    with half the amount of water, offering a delicious and intense coffee experience.</li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Long Black:</span> A double-shot of espresso poured over
+                    hot water, retaining the crema and delivering a strong, flavorful coffee without dilution.</li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Short Macchiato:</span> An espresso shot topped with
+                    creamy steamed milk, providing a balanced and slightly creamy coffee experience.</li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Long Macchiato:</span> Similar to a short macchiato but
+                    with a double shot of coffee, offering a more robust flavor profile.</li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Mezzo Mezzo (Piccolo): </span> A single espresso shot in
+                    a small latte glass filled with steamed milk, creating a harmonious blend of coffee and milk.</li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Cappuccino:</span> A classic coffee drink consisting of
+                    one part espresso, one part textured milk, and one part froth, often topped with chocolate for a
+                    finishing touch.</li>
+            </ul>
+        </div>
+        <div class="pasteries px-10 mt-10 backdrop-blur-sm p-3">
+            <h1 class="text-xl md:text-3xl font-serif font-bold mb-3">PASTERIES</h1>
+            <ul class="space-y-3 list-disc">
+                <li class="text-xl font-tf text-red-950 font-semibold">
+                    <span class="font-serif font-bold text-black">
+                        Croissant: </span> A classic French pastry known for its flaky layers and buttery taste, perfect
+                    for breakfast or a light snack.
+                </li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Danish Pastry:</span> A sweet and flaky pastry with
+                    various fillings like fruit, cream cheese, or almond paste, ideal for a delicious treat with coffee
+                    or tea.</li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Éclair:</span> A French pastry filled with cream and
+                    topped with icing, offering a delightful combination of textures and flavors.</li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Cinnamon Roll:</span> A soft, sweet pastry with cinnamon
+                    sugar filling and cream cheese icing, a comforting and indulgent choice for a morning treat.</li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Fruit Tart:</span> A buttery crust filled with pastry
+                    cream and topped with fresh fruits, creating a colorful and refreshing dessert option.</li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Palmier:</span> Also known as elephant ears, these
+                    crispy, caramelized pastries are made from puff pastry and sugar, perfect for a sweet and crunchy
+                    snack.</li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Macaron: </span> Delicate French cookies made from
+                    almond flour and filled with ganache, buttercream, or jam, offering a burst of flavor in every bite.
+                </li>
+                <li class="text-xl font-tf text-red-950 font-semibold"> <span
+                        class="font-serif font-bold text-black">Baklava:</span> A sweet pastry made of layers of phyllo
+                    dough, nuts, and honey or syrup, providing a rich and decadent dessert experience.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- MENU SECTION END -->
+
+    <!-- CONTACT SECTION -->
+    <section class="lg:px-10 py-10" id="contact">
+        <h1 class="heading text-5xl md:text-7xl text-center font-tf font-bold text-[#a56c52]">CONTACT</h1>
+        <div class="md:px-10 px-3 py-20 flex flex-col lg:flex-row items-center justify-between">
+            <div class="left lg:w-2/4 w-full lg:border-r-2 flex flex-col items-center justify-center mb-5 lg:mb-0">
+                <h2 class="text-2xl md:text-4xl font-bold font-serif">Get In Touch</h2>
+                <p class="text-xl font-semibold py-3 font-tf">Phone no. <span>+1 915003020</span></p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.0622138956!2d-74.3093241796713!3d40.69701929637387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1711549042331!5m2!1sen!2sin"
+                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="shadow-shd rounded-md w-full lg:w-[400px]"></iframe>
+            </div>
+            <div class="right lg:w-2/4 w-full px-3 ">
+                <form
+                    class="md:w-3/4 mx-auto space-y-4  bg-gradient-to-l bg-[#e8c0a4] via-[#ffdba4] from-[#ffffff] py-10 px-5 rounded-md">
+                    <div class="w-full space-x-3 flex flex-col justify-center gap-3 ">
+                        <label for="name" class="text-xl font-serif font-bold ml-3">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name"
+                            class="shadow-shd rounded-md h-16 outline-none px-2 py-2 font-tf text-xl">
+                    </div>
+                    <div class="w-full space-x-3 flex flex-col justify-center gap-3">
+                        <label for="email" class="text-xl font-serif font-bold ml-3">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email"
+                            class="shadow-shd rounded-md h-16 outline-none px-2 py-2 font-tf text-xl">
+                    </div>
+                    <div class="w-full space-x-3 flex flex-col justify-center gap-3">
+                        <label for="message" class="text-xl font-serif font-bold ml-3">Message</label>
+                        <textarea id="message" placeholder="Enter your message"
+                            class="shadow-shd rounded-md h-[150px] outline-none px-2 py-2 font-tf text-xl"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="button"
+                            class="cta-button mt-6 md:mt-8 px-6 py-3 bg-[#bb7234] text-white font-semibold rounded-lg inline-block w-2/4 hover:bg-[#eac48c] hover:text-black hover:shadow-shd font-serif transition duration-300">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION END -->
+
+    <!-- footer start -->
+    <footer class="py-5 px-2 shadow-shd">
+        <h3 class="text-center md:text-lg text-sm font-bold font-tf">&copy; 2024, QScriptCoffee. All rights reserved.
+        </h3>
+    </footer>
+    <!-- footer end -->
 
 
-<!-- js file -->
-<script src="js/index.js"></script>
+    <!-- js file -->
+    <script src="js/index.js" type="module"></script>
 </body>
+
 </html>
